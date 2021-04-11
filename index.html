@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Applied Data Science for Healthcare</title>
+  <meta charset="utf-8"></meta>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <!-- Loading Bootstrap/Yet theme -->
+  <link href="./packages/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+  <link rel="shortcut icon" href="./packages/favicon-book.ico">
+
+  <!-- Custom styles for this template -->
+  <link href="appearance.css" rel="stylesheet"/>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">DSHealth 2021</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-links">
+      <!-- Tab panes -->
+      <ul id="tabs" class="nav nav-tabs navbar-right" role="tablist" >
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <!-- <li role="presentation"><a href="#program" aria-controls="program" role="tab" data-toggle="tab">Program</a></li> -->
+        <!-- <li role="presentation"><a href="#papers" aria-controls="papers" role="tab" data-toggle="tab">Papers</a></li> -->
+        <li role="presentation"><a href="#call" aria-controls="call" role="tab" data-toggle="tab">Call</a></li>
+        <li role="presentation"><a href="#dates" aria-controls="dates" role="tab" data-toggle="tab">Dates</a></li>
+        <!-- <li role="presentation"><a href="#speakers" aria-controls="speakers" role="tab" data-toggle="tab">Speakers</a></li> -->
+        <li role="presentation"><a href="#organizers" aria-controls="organizers" role="tab" data-toggle="tab">Organizers</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper">
+  <div class="jumbotron" id="about">
+    <h2>
+      2021 KDD Workshop on Applied Data Science for Healthcare
+    </h2>
+    <h4>State of XAI and trustworthiness in Health</h4>
+    <p style="padding-top:10px">
+      <span class="glyphicon glyphicon-globe"></span>&nbsp;Location: Singapore<br/>
+      <span class="glyphicon glyphicon-calendar"></span>&nbsp;Workshop Date: August 14, 2021<br/>
+      <a href="https://twitter.com/HealthDs" target="_blank"><i class="fa fa-twitter"></i> Follow us on  Twitter</a><br/>
+    </p>
+  </div>
+</div>
+<!--end jumbotron -->
+
+<div class="container">
+ <div class="row">
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home"><br>
+      <!-- <div class="col-xs-12" id="news"> -->
+          <!-- <h2 style="color:red;">News</h2> -->
+          <!-- <ul> -->
+              <!-- <li><a href="#speakers" target="_blank">Invited Speaker and Panel</a> lineup published. </li> -->
+              <!-- <li> <a href="#program" target="_blank">Program</a> announced. -->
+                  <!-- Selected papers will be part of the KDD Health Day poster -->
+                  <!-- session in the evening.  -->
+                  <!-- See <a href="#papers" target="_blank">Papers</a>.</li> -->
+              <!-- <li>Accepted paper list published. See <a href="#papers" target="_blank">Papers</a>.</li> -->
+              <!-- <li>Paper acceptance notification updated to Jun 12, 2019</li> -->
+              <!-- [> <li>Flyer released <a href="MLMH2018_Flyer.pdf" target="_blank">See Here</a></li> <] -->
+              <!-- [> <li>Paper submission deadline extended to <] -->
+                  <!-- [> <span style="color:red;"><strong>May 25, 2018</strong></span></li> <] -->
+              <!-- <li><strong>Announcing $500 travel grant each for the best paper and the best student paper, -->
+                      <!-- selected for the workshop. -->
+                 <!-- Please see updated <a href="#call" target="_blank">call for papers</a>. </strong></li> -->
+              <!-- [> <li>We have been selected to be part of <] -->
+                  <!-- [> <a href="http://www.kdd.org/kdd2018/health-day-at-kdd" target="_blank">KDD Health Day</a> <] -->
+              <!-- [> </li> <] -->
+          <!-- </ul> -->
+
+      <!-- </div> -->
+
+      <div class="col-xs-12" id="overview">
+        <h2>Overview</h2>
+        <p>
+		Healthcare is, traditionally, a knowledge-driven enterprise with an enormous
+		amount of data - both structured and unstructured. These data can impact
+		positively on the development of data-driven health care including precision
+		medicine and precision public health. In recent years, large scale
+		medical/clinical datasets, such as “omics” data and radiology reports  are
+		increasingly available. We have also witnessed an increasing number of
+		successful AI/ML applications using such datasets to address problems such as
+		drug repurposing and preliminary screening of radiology reports. To facilitate
+		the adoption of such AI/ML in practice, we have simultaneously witnessed an
+		increasing adoption/innovation of using explainability methods to
+		analyze/present AI for Health.  In this deep learning era, What is the current
+		status of AI/ML applications in healthcare? What are the standard methods of
+		explaining such AI models for healthcare? What are the roles of causality in
+		AI/ML practices?  What are the state-of-the-art developments in causal AI in
+		health and health care domains?  What are the limitations and how are the
+		different facets of trust and explanations (see figure 1 below) being addressed
+		in practice? Can knowledge-backed AI lead to more robust and interpretable
+		models? How do data scientists and physicians apply this knowledge in
+		collaboration and via human-centered AI approaches to further the field and
+		improve healthcare? How are regulatory requirements for transparency and
+		trustworthiness of models and data privacy being defined and how can they be
+		fulfilled?
+		After witnessing so many great achievements from deep learning lately, we
+		propose to invite world-leading experts from both data science and healthcare
+		to discuss and debate the path forward for practical applications of AI/ML in
+		healthcare, including demos, early work, and critiques on the current state and
+		the path forward for explainability and trustworthiness in AI. More
+		specifically, we plan to attract high-quality original research from emerging
+		areas with significant implications in healthcare and invite open discussions
+		on controversial yet crucial topics regarding healthcare transformation
+        </p>
+      </div>
+    </div>
+    <!-- end workshop description -->
+    
+    <!-- <div role="tabpanel" class="tab-pane" id="program"><br> -->
+      <!-- <h2>Program</h2> -->
+      <!-- <p>DSHealth 2019 will be held as part of  -->
+         <!-- <a href="https://www.kdd.org/kdd2019/special-days/health-day" target="_blank">KDD Health Day</a> -->
+         <!-- on August 05, 2019. In addition to the workshop, selected papers will -->
+         <!-- also have the opprutunity to take part in the evening KDD poster -->
+         <!-- session as part of KDD Health Day. <br/> -->
+         <!-- <br/> -->
+         <!-- Please refer to the <a href="https://www.kdd.org/kdd2019/docs/KDD_2019_Program-interactive.pdf" target="_blank">KDD 2019 program</a> -->
+         <!-- for up-to-date changes on venues and timings. -->
+      <!-- </p> -->
+      <!-- <div class="row"> -->
+        <!-- <div class="col-md-6"> -->
+          <!-- <h3>KDD Health Day Morning Session</h3> -->
+          <!-- <p>Venue: &nbsp; Cook - Street Level, Egan<br/> -->
+             <!-- Timing: &nbsp;8:00 am - 12:00 pm, August 05<br/> -->
+             <!-- <strong>DSHealth participitation: &nbsp; -->
+                 <!-- <a href="#speakers" target="_blank">Invited talk by Dr. Tae Hyun Hwang</a></strong> <br/> -->
+             <!-- <br/> -->
+             <!-- Please check <a href="https://www.kdd.org/kdd2019/special-days/health-day" target="_blank">KDD Health Day</a> -->
+             <!-- for more details. -->
+          <!-- </p> -->
+        <!-- </div> -->
+      
+        <!-- <div class="col-md-6"> -->
+          <!-- <h3>KDD Health Day Poster Session</h3> -->
+          <!-- <p>Venue: &nbsp; Idlughet Hall 3 - Street Level, Dena’ina<br/> -->
+             <!-- Agenda: &nbsp;Invited posters from Health Day at KDD Poster Reception<br/> -->
+             <!-- Timing: &nbsp;7:00 pm - 9:30 pm, August 05<br/> -->
+             <!-- <strong>DSHealth participitation: &nbsp;Selected papers</strong><br/> -->
+             <!-- <br/> -->
+             <!-- Please check <a href="https://www.kdd.org/kdd2019/docs/KDD_2019_Program-interactive.pdf" target="_blank">KDD Program</a> -->
+             <!-- for more details. -->
+          <!-- </p> -->
+        <!-- </div> -->
+      <!-- </div> -->
+      
+      <!-- <div class="col-xm-12"> -->
+        <!-- <h3>DSHealth Schedule</h3> -->
+        <!-- <p>Venue: Summit 3 - Ground Level, Egan</p> -->
+        <!-- <div class="table-responsive" > -->
+          <!-- <table class="table table-hover"> -->
+            <!-- <thead> -->
+              <!-- <tr class="active"> -->
+                <!-- <th class="col-md-1">Start Time</th> -->
+                <!-- <th class="col-md-1">End Time</th> -->
+                <!-- <th class="col-md-7">Title</th> -->
+                <!-- <th class="col-md-3">Speaker</th> -->
+              <!-- </tr> -->
+            <!-- </thead> -->
+            <!-- <tbody> -->
+              <!-- <tr> -->
+                <!-- <td>1:00 pm</td> -->
+                <!-- <td>1:10 pm</td> -->
+                <!-- <td>Introduction and Welcome</td> -->
+                <!-- <td>TBD</td> -->
+              <!-- </tr> -->
+              <!-- <tr class="active"> -->
+                <!-- <td>1:10 pm</td> -->
+                <!-- <td>2:10 pm</td> -->
+                <!-- <td>Oral Paper Presentations (15 mins each)<br/> -->
+                    <!-- #35: Predicting assisted ventilation in Amyotrophic Lateral Sclerosis using a mixture of experts and conformal predictors<br/> -->
+                    <!-- #42: Understanding Behavior of Clinical Models under Domain Shifts<br/> -->
+                    <!-- #45: Double Core Memory Networks for Mortality Prediction using Multimodal Intensive Care Data<br/> -->
+                    <!-- #52: Time-to-Event Prediction for Correlated Clinical Events based on State Space Model -->
+                <!-- </td> -->
+                <!-- <td> -->
+                    <!-- #35: Telma Pereira, Sofia Pires, Marta Gromicho, Susana Pinto, Mamede de Carvalho and Sara C. Madeira<br/>    -->
+                    <!-- #42: Jayaraman J. Thiagarajan, Deepta Rajan and Prasanna Sattigeri<br/> -->
+                    <!-- #45: Zhenxing Xu, Yujuan Feng, Lin Gan, Xu Min, Anais Chalant, Ning Chen, Bin Yu, Ting Chen and Fei Wang<br/>  -->
+                    <!-- #52: Emily Xue, Denny Zhou, Nan Du, Andrew Dai, Zhen Xu, Kun Zhang and Claire Cui  -->
+                <!-- </td> -->
+              <!-- </tr> -->
+              <!-- <tr> -->
+                <!-- <td>2:10 pm</td> -->
+                <!-- <td>2:30 pm</td> -->
+                <!-- <td>Spotlight Session 1 (2 mins each)<br/> -->
+                    <!-- # 3: SOAR: Shrinkage Optimized Active Learning with Joint Regularization for Electrocardiographic Signal Classification<br/> -->
+                    <!-- # 4: A Knowledge-Enriched Local Sequence Alignment Algorithm (KELSA) for Electronic Health Records<br/> -->
+                    <!-- # 6: Activity2Vec: Learning ADL Embeddings from Sensor Data with a Sequence-to-Sequence Model<br/> -->
+                    <!-- # 7: Finding Discriminative Subgroups of Brain Regions using Tensor Factorization<br/> -->
+                    <!-- # 8: Spatially Robust Deep Learning Application for Assessing the Facial Acne Severity Using Selfie Images<br/> -->
+                    <!-- # 11: Detection of Covariate Interactions by Deep Neural Network Models<br/> -->
+                    <!-- # 13: Medical Concept Representation Learning from Claims Data and Application to Health Plan Payment Risk Adjustment<br/> -->
+                    <!-- # 14: Aggregate-Eliminate-Predict: Detecting Adverse Drug Events from Heterogeneous Electronic Health Records<br/> -->
+                    <!-- # 15: Accurate Prediction of Medical Events based on Large Healthcare Claim Data -->
+                <!-- </td> -->
+                <!-- <td>TBD -->
+                <!-- </td> -->
+              <!-- </tr> -->
+              <!-- <tr class="info"> -->
+                <!-- <td>2:30 pm</td> -->
+                <!-- <td>3:00 pm</td> -->
+                <!-- <td>Coffee and Poster Session</td> -->
+                <!-- <td>N/A</td> -->
+              <!-- </tr> -->
+
+              <!-- <tr class="active"> -->
+                <!-- <td>3:00 pm</td> -->
+                <!-- <td>3:30 pm</td> -->
+                <!-- <td>Spotlight Session 2 (2 mins each)<br/> -->
+                    <!-- # 17: A Systematic Approach to Detect Hierarchical Healthcare Cost Drivers and Interpretable Change Patterns<br/> -->
+                    <!-- [> # 18: Realizing Gait and IOT in Predicting Foot Ulcer for Patients with Diabetes<br/> <] -->
+                    <!-- # 20: Cost-aware Active Learning for Named Entity Recognition in Clinical Text<br/> -->
+                    <!-- # 22: Computational Phenotype Discovery via Probabilistic Independence<br/> -->
+                    <!-- # 24: Exploring difference in public perceptions on HPV vaccine between gender groups from Twitter using deep learning<br/> -->
+                    <!-- # 25: An Information Extraction and Knowledge Graph Platform for Accelerating Biochemical Discoveries<br/> -->
+                    <!-- # 29: An AI-Augmented Lesion Detection Framework For Liver Metastases With Model Interpretability<br/> -->
+                    <!-- # 30: Modeling the Uncertainty with Bayesian Deep Learning]{Modeling the Uncertainty in Electronic Health Records: a Bayesian Deep Learning Approach<br/> -->
+                    <!-- # 31: Evaluation of Embeddings of Laboratory Test Codes for Patients at a Cancer Center<br/> -->
+                    <!-- # 37: Infant Mortality Prediction using Birth Certificate Data<br/> -->
+                    <!-- # 43: Embed as you need: Evaluation of Random Walk and Poincare Embeddings for Healthcare Tasks<br/> -->
+                    <!-- # 47: Leveraging Linguistic Characteristics for Bipolar Disorder Recognition with Gender Differences<br/> -->
+                    <!-- # 49: Logical Form Information for Clinical Qestion Answering<br/> -->
+                    <!-- # 51: SLAM Endoscopy enhanced by adversarial depth prediction -->
+                <!-- </td> -->
+                <!-- <td>TBD -->
+                <!-- </td> -->
+              <!-- </tr> -->
+
+              <!-- <tr> -->
+                <!-- <td>3:30 pm</td> -->
+                <!-- <td>3:40 pm</td> -->
+                <!-- <td>Award Presentation</td> -->
+                <!-- <td>TBD</td> -->
+              <!-- </tr> -->
+              <!-- <tr class="active"> -->
+                <!-- <td>3:40 pm</td> -->
+                <!-- <td>4:30 pm</td> -->
+                <!-- <td><a href="#speakers" target="_blank">Panel Discussion:</a><br/> -->
+                    <!-- Relevance and importance of knowledge driven AI, in order to address real challenges and make an impact in healthcare -->
+                <!-- </td> -->
+                <!-- <td>Fred Rahmanian (Moderator)<br/> -->
+                    <!-- Jasmine Wilkerson<br/> -->
+                    <!-- Lisa Weavind<br/> -->
+                    <!-- Fei Wang<br/> -->
+                    <!-- Maria Spiliopoulou -->
+                <!-- </td> -->
+              <!-- </tr> -->
+              <!-- <tr> -->
+                <!-- <td>4:30 pm</td> -->
+                <!-- <td>5:00 pm</td> -->
+                <!-- <td>DSHealth Poster Session</td> -->
+                <!-- <td>TBD</td> -->
+              <!-- </tr> -->
+            <!-- </tbody> -->
+          <!-- </table> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+    <!-- end program -->
+
+    <!-- <div role="tabpanel" class="tab-pane" id="speakers"><br> -->
+      <!-- <h2>Invited Speaker</h2> -->
+
+      <!-- <div class="col-md-12" id="speaker-1"> -->
+          <!-- <h4><a href="https://www.hwanglab.org/" target="_blank"> -->
+                  <!-- <span class="glyphicon glyphicon-globe"/> -->
+              <!-- </a> -->
+          <!-- Dr. Tae Hyun Hwang, Cleveland Clinic Lerner College of Medicine, USA. -->
+          <!-- </h4> -->
+          <!-- <br/> -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-md-10 col-sm-12"> -->
+             <!-- <p><strong>Bio:</strong> -->
+                <!-- Tae Hyun Hwang received his Ph.D. in Computer Science (Machine Learning and -->
+                <!-- Computational Biology) at the University of Minnesota Twin-Cites at 2011. He and his research -->
+                <!-- group lead machine learning and AI research at the Cleveland Clinic. Prior to his appointment at the Cleveland Clinic, he was a Research Associate in the Department of Computational Biology and Bioinformatics at Genentech and was a tenure-track faculty at the University of Texas -->
+                <!-- Southwestern Medical Center (UTSW) where he served as a co-director for UTSW Kidney -->
+                <!-- Cancer SPORE and led a computational team for UT Lung Cancer SPORE. He currently serves as a bioinformatics core director for NASA Specialized Centers of Research (NSCOR) as well as committees of various Machine Learning, Data Mining, and AI conferences. -->
+                <!-- <br/> -->
+                <!-- He and his lab members from Translational Machine Learning and AI lab at the Cleveland Clinic are working on developing novel machine learning and AI algorithms that are readily applicable in the clinical setting to help patients with a lethal disease. His work has been published more -->
+                <!-- than 40 peer-reviewed journals such as Nature, Cell, Nature Neuroscience, and Cancer Cell, as -->
+                <!-- well as top machine learning, data mining and AI conferences including IEEE International -->
+                <!-- Conference on Data Mining (ICDM) and SIAM International Conference on Data Mining (SDM). -->
+                <!-- He is a recipient of the American Cancer Society Young Investigator Award and NCI UTSW-MD -->
+                <!-- Anderson Lung Cancer SPORE Career Development Award. -->
+              <!-- </p> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-2 hidden-sm hidden-xs pull-right"> -->
+            <!-- <img class="img-responsive img-circle" src="./assets/tae_hyun_hwang.jpg"  -->
+            <!-- style="max-height: 150px;" -->
+            <!-- alt="Profile Image"></img>  -->
+          <!-- </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="table-responsive"> -->
+          <!-- <table class="table table-borderless"> -->
+            <!-- <tr> -->
+                <!-- <td class="col-sm-1"><span class="glyphicon glyphicon-bullhorn"></span> Title</em></td> -->
+                <!-- <td class="col-sm-11"> Deploying AI in healthcare in the wild: Lessons, challenges, and opportunities -->
+                <!-- </td> -->
+            <!-- </tr> -->
+            <!-- <tr> -->
+                <!-- <td><span class="glyphicon glyphicon-calendar"></span> Time</em></td> -->
+                <!-- <td>10:00 am - 10:30 am</td> -->
+            <!-- </tr> -->
+            <!-- <tr> -->
+                <!-- <td><span class="glyphicon glyphicon-home"></span> Venue</em></td> -->
+                <!-- <td>Cook - Street Level, Egan</td> -->
+            <!-- </tr> -->
+          <!-- </table> -->
+         <!-- </div> -->
+      <!-- </div> -->
+      <!-- [> end speaker 1 <] -->
+
+
+      <!-- <h2>Panel</h2> -->
+      <!-- <br/> -->
+
+      <!-- <div class="row" id="speaker-2"> -->
+        <!-- <div class="col-md-4"> -->
+          <!-- <div class="table-responsive"> -->
+            <!-- <table class="table table-borderless"> -->
+              <!-- <tr> -->
+                  <!-- <td class="col-sm-4"><span class="glyphicon glyphicon-bullhorn"></span> Topic</em></td> -->
+                  <!-- <td class="col-sm-8">Relevance and importance of knowledge -->
+                      <!-- driven AI, in order to address real challenges and make an -->
+                      <!-- impact in healthcare -->
+                  <!-- </td> -->
+              <!-- </tr> -->
+              <!-- <tr> -->
+                  <!-- <td><span class="glyphicon glyphicon-calendar"></span> Time</em></td> -->
+                  <!-- <td>3:40 pm - 4:30 pm</td> -->
+              <!-- </tr> -->
+              <!-- <tr> -->
+                  <!-- <td><span class="glyphicon glyphicon-home"></span> Venue</em></td> -->
+                  <!-- <td>Summit 3 - Ground Level, Egan</td> -->
+              <!-- </tr> -->
+            <!-- </table> -->
+          <!-- </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="col-md-8"> -->
+          <!-- <div class="col-md-2"> -->
+            <!-- <img class="img-responsive img-circle" src="./assets/fred_rahmanian.jpeg"  -->
+            <!-- style="max-height: 150px;" -->
+            <!-- alt="Profile Image"></img> <br/> -->
+            <!-- <a href="https://www.linkedin.com/in/fredrahmanian/" target="_blank">Fred Rahmanian</a> -->
+            <!-- <strong>(Moderator)</strong>  -->
+          <!-- </div> -->
+
+          <!-- <div class="col-md-2"> -->
+            <!-- <img class="img-responsive img-circle" src="./assets/jasmine_wilkerson.jpeg"  -->
+            <!-- style="max-height: 150px;" -->
+            <!-- alt="Profile Image"></img> <br/> -->
+            <!-- <a href="https://www.linkedin.com/in/jasmine-wilkerson/" target="_blank">Jasmine Wilkerson</a> -->
+          <!-- </div> -->
+
+          <!-- <div class="col-md-2"> -->
+            <!-- <img class="img-responsive img-circle" src="./assets/lisa_weavind.jpg"  -->
+            <!-- style="max-height: 150px;" -->
+            <!-- alt="Profile Image"></img> <br/> -->
+            <!-- <a href="https://www.vumc.org/burn/person/lisa-weavind-md" target="_blank">Lisa Weavind</a> -->
+          <!-- </div> -->
+
+          <!-- <div class="col-md-2"> -->
+            <!-- <img class="img-responsive img-circle" src="./assets/fei_wang.jpeg"  -->
+            <!-- style="max-height: 150px;" -->
+            <!-- alt="Profile Image"></img> <br/> -->
+            <!-- <a href="https://sites.google.com/site/feiwang03/" target="_blank">Fei Wang</a> -->
+          <!-- </div> -->
+
+          <!-- <div class="col-md-2"> -->
+            <!-- <img class="img-responsive img-circle" src="./assets/maria_Spiliopoulou.png"  -->
+            <!-- style="max-height: 150px;" -->
+            <!-- alt="Profile Image"></img> <br/> -->
+            <!-- <a href="http://www.kmd.ovgu.de/Team/Academic+Staff/Myra+Spiliopoulou.html" target="_blank">Maria Spiliopoulou</a> -->
+          <!-- </div> -->
+        <!-- </div> -->
+
+      <!-- </div> -->
+      <!-- [> end speaker 1 <] -->
+    <!-- </div> -->
+    <!-- end speakers -->
+    
+    <!-- <div role="tabpanel" class="tab-pane" id="papers"><br> -->
+      <!-- <h2>Accepted Papers</h2> -->
+      <!-- <p> -->
+      <!-- We have accepted 27 papers for presentation at the workshop. All papers -->
+      <!-- will be presented as posters within the workshop. In addition, we have selected -->
+      <!-- 4 papers for oral presentation. PDF version of the final papers, if provided by  -->
+      <!-- the authors, are hyperlinked below. -->
+      <!-- </p> -->
+
+      <!-- <div class="col-xm-12"> -->
+        <!-- <h3>Oral Presentations</h3> -->
+        <!-- <table class="table table-borderless"> -->
+          <!-- <tbody> -->
+            <!-- <tr><td> -->
+              <!-- <strong>#35&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://www.researchgate.net/publication/334561366_Predicting_assisted_ventilation_in_Amyotrophic_Lateral_Sclerosis_using_a_mixture_of_experts_and_conformal_predictors' target='_blank'>Predicting assisted ventilation in Amyotrophic Lateral Sclerosis using a mixture of experts and conformal predictors</a><br/> -->
+              <!-- <em>Telma Pereira, Sofia Pires, Marta Gromicho, Susana Pinto, Mamede de Carvalho and Sara C. Madeira</em> -->
+            <!-- &nbsp;<button type="button" class="btn btn-sm btn-success" disabled><i class="fa fa-trophy"></i> Best Student Paper </button>&nbsp;<button type="button" class="btn btn-sm btn-info" disabled><i class="fa fa-trophy"></i> Health Day </button> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#42&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/abs/1809.07806' target='_blank'>Understanding Behavior of Clinical Models under Domain Shifts</a><br/> -->
+              <!-- <em>Jayaraman J. Thiagarajan, Deepta Rajan and Prasanna Sattigeri</em> -->
+            <!-- &nbsp;<button type="button" class="btn btn-sm btn-success" disabled><i class="fa fa-trophy"></i> Best Paper </button>&nbsp;<button type="button" class="btn btn-sm btn-info" disabled><i class="fa fa-trophy"></i> Health Day </button> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#45&nbsp;&nbsp;</strong> -->
+              <!-- Double Core Memory Networks for Mortality Prediction using Multimodal Intensive Care Data<br/> -->
+              <!-- <em>Zhenxing Xu, Yujuan Feng, Lin Gan, Xu Min, Anais Chalant, Ning Chen, Bin Yu, Ting Chen and Fei Wang</em> -->
+            <!-- &nbsp;<button type="button" class="btn btn-sm btn-info" disabled><i class="fa fa-trophy"></i> Health Day </button> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#52&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://github.com/yuanxue/yuanxue.github.io/blob/master/KDD2019_workshop.pdf' target='_blank'>Time-to-Event Prediction for Correlated Clinical Events based on State Space Model</a><br/> -->
+              <!-- <em>Emily Xue, Denny Zhou, Nan Du, Andrew Dai, Zhen Xu, Kun Zhang and Claire Cui</em> -->
+            <!-- &nbsp;<button type="button" class="btn btn-sm btn-info" disabled><i class="fa fa-trophy"></i> Health Day </button> -->
+            <!-- </td><tr> -->
+          <!-- </tbody> -->
+        <!-- </table> -->
+      <!-- </div> -->
+
+      <!-- <div class="col-xm-12"> -->
+        <!-- <h3>Poster Presentations</h3> -->
+        <!-- <table class="table table-borderless"> -->
+          <!-- <tbody> -->
+            <!-- <tr><td> -->
+              <!-- <strong>#3&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://drive.google.com/open?id=15f28g4SMslNT0K3TXBavpIPKLNnLPL35' target='_blank'>SOAR: Shrinkage Optimized Active Learning with Joint Regularization for Electrocardiographic Signal Classification</a><br/> -->
+              <!-- <em>Xu Chen and Saratendu Sethi</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#4&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://drive.google.com/open?id=1LaX8VT_IrWd65E-bI3l31mGMLgsmzxXk' target='_blank'>A Knowledge-Enriched Local Sequence Alignment Algorithm (KELSA) for Electronic Health Records</a><br/> -->
+              <!-- <em>Ming Huang, Nilay Shah and Lixia Yao</em> -->
+            <!-- &nbsp;<button type="button" class="btn btn-sm btn-info" disabled><i class="fa fa-trophy"></i> Health Day </button> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#6&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/pdf/1907.05597.pdf' target='_blank'>Activity2Vec: Learning ADL Embeddings from Sensor Data with a Sequence-to-Sequence Model</a><br/> -->
+              <!-- <em>Alireza Ghods and Diane Cook</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#7&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://github.com/yejinjkim/yejinjkim.github.io/raw/master/papers/DSHealth%20(1).pdf' target='_blank'>Finding Discriminative Subgroups of Brain Regions using Tensor Factorization</a><br/> -->
+              <!-- <em>Yejin Kim, Luca Giancardo, Danilo Pena and Xiaoqian Jiang</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#8&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/pdf/1907.07901.pdf' target='_blank'>Spatially Robust Deep Learning Application for Assessing the Facial Acne Severity Using Selfie Images</a><br/> -->
+              <!-- <em>Tingting Zhao, Hang Zhang and Jacob Spoelstra</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#11&nbsp;&nbsp;</strong> -->
+              <!-- <a href='./assets/DSHealth_2019_paper_11.pdf' target="_blank">Detection of Covariate Interactions by Deep Neural Network Models</a><br/> -->
+              <!-- <em>Yijun Shao, Ali Ahmed and Qing Zeng-Treitler</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#13&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/abs/1907.06600' target='_blank'>Medical Concept Representation Learning from Claims Data and Application to Health Plan Payment Risk Adjustment</a><br/> -->
+              <!-- <em>Qiuyue Zhong, Andrew Fairless, Jasmine McCammon and Farbod Rahmanian</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#14&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/pdf/1907.06058.pdf' target='_blank'>Aggregate-Eliminate-Predict: Detecting Adverse Drug Events from Heterogeneous Electronic Health Records</a><br/> -->
+              <!-- <em>Maria Bampa and Panagiotis Papapetrou</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#15&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://drive.google.com/open?id=1ikAuYYaBnVQeSr67xTZaexnnxn3PD_7H' target='_blank'>Accurate Prediction of Medical Events based on Large Healthcare Claim Data</a><br/> -->
+              <!-- <em>Mohammad Arbabshirani, Marcos Salganicoff, Christopher Williams, Bharat Gorantla and Bharat Rao</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#17&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/abs/1907.08237' target='_blank'>A Systematic Approach to Detect Hierarchical Healthcare Cost Drivers and Interpretable Change Patterns</a><br/> -->
+              <!-- <em>Ta-Hsin Li, Huijing Jiang, Kevin Tran, Gigi Yuen-Reed, Bob Kelley and Thomas Halvorson</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#18&nbsp;&nbsp;</strong> -->
+              <!-- Realizing Gait and IOT in Predicting Foot Ulcer for Patients with Diabetes<br/> -->
+              <!-- <em>M Saravanan, Perepu Satheesh Kumar and Jayaram Harikrishnan</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#20&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://sbmi.uth.edu/ccb/publications/kdd-2019-workshop-final-rev.pdf' target='_blank'>Cost-aware Active Learning for Named Entity Recognition in Clinical Text</a><br/> -->
+              <!-- <em>Hua Xu and Qiang Wei</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#22&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/abs/1907.11051' target='_blank'>Computational Phenotype Discovery via Probabilistic Independence</a><br/> -->
+              <!-- <em>Thomas Lasko and Diego Mesa</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#24&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/abs/1907.03167' target='_blank'>Exploring difference in public perceptions on HPV vaccine between gender groups from Twitter using deep learning</a><br/> -->
+              <!-- <em>Jingcheng Du, Chongliang Luo, Qiang Wei, Yong Chen and Cui Tao</em> -->
+            <!-- &nbsp;<button type="button" class="btn btn-sm btn-info" disabled><i class="fa fa-trophy"></i> Health Day </button> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#25&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/pdf/1907.08400' target='_blank'>An Information Extraction and Knowledge Graph Platform for Accelerating Biochemical Discoveries</a><br/> -->
+              <!-- <em>Matteo Manica, Christoph Auer, Valery Weber, Federico Zipoli, Michele Dolfi, Peter Staar, Teodoro Laino, Costas Bekas, Akihiro Fujita, Hiroki Toda, Shuichi Hirose and Yasumitsu Orii</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#29&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/pdf/1907.07713.pdf' target='_blank'>An AI-Augmented Lesion Detection Framework For Liver Metastases With Model Interpretability</a><br/> -->
+              <!-- <em>Xin Hunt, Ralph Abbey, Ricky Tharrington, Joost Huiskens and Nina Wesdorp</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#30&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/pdf/1907.06162.pdf' target='_blank'>Modeling the Uncertainty with Bayesian Deep Learning]{Modeling the Uncertainty in Electronic Health Records: a Bayesian Deep Learning Approach</a><br/> -->
+              <!-- <em>Riyi Qiu, Yugang Jia, Mirsad Hadzikadic, Michael Dulin and Xi Niu</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#31&nbsp;&nbsp;</strong> -->
+              <!-- <a href="https://arxiv.org/abs/1907.09600" target="_blank">Evaluation of Embeddings of Laboratory Test Codes for Patients at a Cancer Center</a><br/> -->
+              <!-- <em>Lorenzo A. Rossi, Chad Shawber, Janet Munu and Finly Zachariah</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#37&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/abs/1907.08968' target='_blank'>Infant Mortality Prediction using Birth Certificate Data</a><br/> -->
+              <!-- <em>Antonia Saravanou, Clemens Noelke, Nicholas Huntington, Dolores Acevedo-Garcia and Dimitrios Gunopulos</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#43&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/abs/1907.08650' target='_blank'>Embed as you need: Evaluation of Random Walk and Poincare Embeddings for Healthcare Tasks</a><br/> -->
+              <!-- <em>Khushbu Agarwal, Tome Eftimov, Sutanay Choudhury, Raghavendra Addanki, Suzanne Tamang and Robert Rallo</em> -->
+            <!-- &nbsp;<button type="button" class="btn btn-sm btn-info" disabled><i class="fa fa-trophy"></i> Health Day </button> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#47&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/pdf/1907.07366.pdf' target='_blank'>Leveraging Linguistic Characteristics for Bipolar Disorder Recognition with Gender Differences</a><br/> -->
+              <!-- <em>Yen Hao Huang, Yi Hsin Chen, Fernando Henrique Calderon Alvarado, Ssu-Rui Lee, Shu-I Wu, Yuwen Lai and Yi-Shin Chen</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#49&nbsp;&nbsp;</strong> -->
+              <!-- Logical Form Information for Clinical Qestion Answering<br/> -->
+              <!-- <em>Wei-Hung Weng, Emily Alsentzer, Di Jin, So Yeon Min, Preethi Raghavan and Peter Szolovits</em> -->
+            <!-- </td><tr> -->
+
+            <!-- <tr><td> -->
+              <!-- <strong>#51&nbsp;&nbsp;</strong> -->
+              <!-- <a href='https://arxiv.org/abs/1907.00283' target='_blank'>SLAM Endoscopy enhanced by adversarial depth prediction</a><br/> -->
+              <!-- <em>Richard Chen, Taylor L. Bobrow, Thomas Athey, Faisal Mahmood and Nicholas J. Durr</em> -->
+            <!-- </td><tr> -->
+          <!-- </tbody> -->
+        <!-- </table> -->
+      <!-- </div> -->
+
+    <!-- </div> -->
+    <!-- end papers -->
+
+    <div role="tabpanel" class="tab-pane" id="call"><br>
+      <h2>Call for Papers</h2>
+      <p>We invite full papers, as well as work-in-progress on the application
+      of data science in healthcare.  
+      Topics may include, but not limited to, the following topics (For more information 
+      see <a href="#home" target="_blank">workshop overview</a>) with special 
+      focus on papers that are aimed at addressing the state of explainable and trustworthiness of AI in healthcare.
+      </p> 
+      <ul>
+		<li>Applications of XAI in Healthcare</li>
+		<li>Critique of XAI in Healthcare</li>
+		<li>User driven XAI in Healthcare</li>
+		<li>Trustworthiness</li>
+		<li>Uncertainty quantification and communication, e.g. out-of-distribution detection</li>
+		<li>Domain generalization and adaptation, e.g. multi-site studies</li>
+		<li>Data access, sharing and privacy, e.g. via federated learning</li>
+		<li>Human-in-the-loop-learning and human-centered AI</li>
+		<li>Synthetic data for healthcare research</li>
+		<li>Interpretable healthcare</li>
+		<li>Actionable Insights</li>
+		<li>Behavioral studies</li>
+		<li>Ethical AI and accountability</li>
+		<li>Regulatory aspects of AI in healthcare</li>
+		<li>Nudging and implications</li>
+		<li>Multidisciplinary studies on Healthcare</li>
+		<li>Demos of practical applications</li>
+      </ul>
+      <p>Papers must be submitted in PDF format to easychair
+      <a href="https://easychair.org/conferences/?conf=dshealth2021"
+                                                      target="_blank">https://easychair.org/conferences/?conf=dshealth2021</a>
+      and formatted according to the new 
+        <a href="https://www.acm.org/publications/proceedings-template" target="_blank">
+          Standard ACM Conference Proceedings Template
+        </a>. 
+        Authors are encouraged to use the 
+        <a href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-primary-article-template/wbvnghjbzwpc" target="_blank">
+            Overleaf template
+        </a>.
+        Papers must be a maximum length of 4 pages, excluding references.
+      </p>
+
+      <p>The program committee will select the papers based on originality, presentation,
+      and technical quality for spotlight and/or poster presentation.</p>
+
+      <!-- <p class="text-info"><strong> -->
+       <!-- The best paper and the best student paper will be awarded 500 travel grant each. -->
+       <!-- Please indicate whether the primary author is a student in the easychair submission form. -->
+      <!-- </strong></p> -->
+    </div>
+    <!-- end call -->
+
+    <div role="tabpanel" class="tab-pane" id="dates"><br>
+      <h2>Key Dates</h2>
+      <ul>
+          <li> Paper Submission opens: Apr 15, 2021</li>
+          <li> Paper Submission deadline: May 10, 2021</li>
+          <li>Acceptance Notice: Jun 10, 2021</li>
+        <li>Workshop Date: Aug 14, 2021</li>
+      </ul>
+      <p>All deadlines correspond to 11:59 PM Hawaii Standard Time 
+       (<a href="https://www.timeanddate.com/worldclock/usa/honolulu" target="_blank"> HST</a>).
+       <!-- For any questions / concerns, please contact us at <a href="mailto:dshealth2019@easychair.org" target="_blank">dshealth2019@easychair.org</a>. -->
+      </p>
+    </div>
+    <!-- end dates -->
+
+
+    <div role="tabpanel" class="tab-pane" id="organizers"><br>
+      <h2>Organizers</h2>
+      <ul>
+          <li><a href="https://wcm-wanglab.github.io/index.html" target="_blank">Fei Wang</a>, Cornell University, USA</li>
+          <li><a href="https://prithwi.github.io" target="_blank">Prithwish Chakraborty</a>, IBM Research, USA</li>
+          <li><a href="https://scholar.google.com/citations?user=FyNfOOQAAAAJ&hl=en" target="_blank">Tao Xu</a>, F-Hoffmann la Roche, Switzerland</li>
+          <li><a href="https://www.linkedin.com/in/pyhsueh/" target="_blank">Pei-Yun Sabrina Hsueh</a>, Viome Inc., USA</li>
+          <li><a href="https://www.slds.stat.uni-muenchen.de/people/Xudong/" target="_blank">Xudong Sun</a>, LMU Munich, Germany</li>
+          <li><a href="http://www.ri.fzv.um.si/gstiglic/" target="_blank">Gregor Stiglic</a>, University of Maribor, Slovenia</li>
+          <li><a href="https://www.linkedin.com/in/gracy-crane-374ba120/?originalSubdomain=uk" target="_blank">Gracy Crane</a>, Roche Products Ltd</li>
+          <li><a href="https://www.mdc-berlin.de/haghverdi" target="_blank">Laleh Haghverdi</a>, Max-Delbrueck Center for Molecular Medicine, Germany</li>
+          <li><a href="https://hobi.med.ufl.edu/profile/bian-jiang/" target="_blank">Jiang Bian</a>, University of Florida, USA</li>
+          <li><a href="https://www.linkedin.com/in/yaolixia" target="_blank">Lixia Yao</a>, Merck, USA</li>
+          <li><a href="https://scholar.google.com/citations?user=AaPKbPAAAAAJ&hl=en" target="_blank">Florian Buettner</a>, Frankfurt University/German Cancer Research Center (DKFZ), Germany</li>
+      </ul>
+    </div>
+    <!-- end organizers-->
+  </div> <!-- end tab-content -->
+ </div>
+  <!-- end content row -->
+</div> <!--overall container div -->
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row" style="padding-top: 10px;">
+       <div class="col-sm-12">
+           <ul class="list-unstyled text-centre">
+             <li>&copy; 2021
+             Last Updated: 2021-04-10</li>
+           </ul>
+       </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Jquery -->
+<script type="text/javascript" src="./packages/bootstrap3/js/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+<!-- Boostrap JavaScript -->
+<script type="text/javascript" src="packages/bootstrap3/js/bootstrap.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<!-- Script to add external linking to tabs -->
+<!-- https://stackoverflow.com/a/35077844 -->
+<script type="text/javascript">
+$(function () {
+    console.log("I am here");
+    var hash = window.location.hash;
+    hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+});
+</script>
+</body>
+</html>
