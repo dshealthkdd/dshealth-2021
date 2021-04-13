@@ -48,7 +48,7 @@ Important dates:
 --------------------------
 
 * Paper Submission opens: Apr 15, 2021
-* Paper Submission deadline: May 10, 2021
+* Paper Submission deadline: May 20, 2021
 * Acceptance Notice: Jun 10, 2021
 * Workshop Date: Aug 14, 2021
 
