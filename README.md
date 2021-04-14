@@ -1,7 +1,7 @@
 # DSHealth 2020
 
 2021 KDD Workshop on Applied Data Science for Healthcare: State of XAI and trustworthiness in Health.  
-Singapore  
+Virtual
 August 14, 2021
 Webagpe: https://dshealthkdd.github.io/dshealth-2021/
 
@@ -9,7 +9,7 @@ Webagpe: https://dshealthkdd.github.io/dshealth-2021/
 CALL FOR PAPERS
 ---------------------------------
 
-4 page submissions due by Jun 10th, 2021
+4 page submissions due by May 20th, 2021
 
 Healthcare is, traditionally, a knowledge-driven enterprise with an enormous
 amount of data - both structured and unstructured. These data can impact
@@ -49,8 +49,8 @@ Important dates:
 
 * Paper Submission opens: Apr 15, 2021
 * Paper Submission deadline: May 20, 2021
-* Acceptance Notice: Jun 10, 2021
-* Workshop Date: Aug 14, 2021
+* Acceptance Notice: Jun 20, 2021
+* Workshop Date: Aug 14-18, 2021
 
 All deadlines correspond to 11:59 PM Hawaii Standard Time 
 
