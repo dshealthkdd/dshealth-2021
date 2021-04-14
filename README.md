@@ -97,7 +97,7 @@ Organizers:
 * Fei Wang, Cornell University, USA
 * Prithwish Chakraborty, IBM Research, USA
 * Tao Xu, F-Hoffmann la Roche, Switzerland
-* Pei-Yun Sabrina Hsueh, Viome Inc., USA
+* Pei-Yun Sabrina Hsueh, Bayesian Health Inc., USA
 * Xudong Sun, LMU Munich, Germany
 * Gregor Stiglic, University of Maribor, Slovenia
 * Gracy Crane, Roche Products Ltd
